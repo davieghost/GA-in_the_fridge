@@ -1,0 +1,26 @@
+<h1>In The Fridge</h1>
+
+<table>
+	<tr>
+		<td>Num</td>
+		<td>Food</td>
+		<td>Type</td>
+		<td>Exp</td>
+		<td>Qual</td>
+	</tr>
+	<% @foods.each do |food| %>
+	<tr>
+		<td><%= food.id %></td>
+		<td><%= food.name %></td>
+		<td><%= food.food_type %></td>
+		<td><%= food.expiration %></td>
+		<td><%= food.quality %></td>
+	</tr>
+	<% end %>
+</table>
+
+	
+	<h2>You have <%= @foods.count %> items in the fridge</h2>
+
+
+
